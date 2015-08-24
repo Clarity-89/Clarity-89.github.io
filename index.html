@@ -2,13 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My webpage</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand custom-nav page-scroll" href="#">
+                <img id="ava" alt="Brand" src="https://dl.dropboxusercontent.com/u/28151607/Profilepic/Me.jpg">
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
 <div class="site-wrapper">
 
@@ -16,28 +55,15 @@
 
         <div class="cover-container">
 
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <h3 class="masthead-brand"><img
-                            src="https://dl.dropboxusercontent.com/u/28151607/Profilepic/Me.jpg" id="ava"> Oleksandr
-                        Khomenko</h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
 
             <div class="inner cover">
-                <h1 class="cover-heading">Welcome to my personal page.</h1>
-
-                <p class="lead">This is my website which contains my contact information and projects I have been working on.</p>
+                <h1 class="cover-heading">Welcome!</h1>
+                <hr>
+                <p class="lead">This is my website which contains my contact information and projects I have been
+                    working on.</p>
 
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-default" id="learn_more">Learn more</a>
+                    <a href="#about" class="btn btn-lg btn-default page-scroll" id="learn_more">Learn more</a>
                 </p>
             </div>
 
@@ -52,10 +78,21 @@
     </div>
 
 </div>
-<div class="cover-container" id="custom_container">
+<section id="about" class="about-section">
 
-</div>
+</section>
+<section id="portfolio" class="portfolio-section">
+
+</section>
+<section id="contact" class="contact-section">
+
+</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
