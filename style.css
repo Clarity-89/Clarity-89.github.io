@@ -1,25 +1,4 @@
 /*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
-}
-
-/*
  * Base structure
  */
 
@@ -42,10 +21,8 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-    background: url('http://shawngraham.me/images/blog/DeathtoStock_Wired7.jpg');
-    background-size: 100% 100%;;
+    background: url('http://shawngraham.me/images/blog/DeathtoStock_Wired7.jpg') center;
+    background-size: cover;
 }
 
 .site-wrapper-inner {
@@ -69,7 +46,7 @@ body {
  */
 
 .cover {
-    padding: 0 20px;
+    padding: 50% 20px;
 }
 
 .cover .btn-lg {
@@ -91,6 +68,7 @@ body {
  */
 
 @media (min-width: 768px) {
+
     /* Pull out the footer */
     .mastfoot {
         position: fixed;
@@ -100,10 +78,6 @@ body {
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
-    }
-
-    .inner-cover {
-        padding-top: 150px;
     }
 
     /* Handle the widths */
@@ -118,22 +92,14 @@ body {
     .cover-container {
         width: 700px;
     }
-    .inner-cover {
-        padding-top: 150px;
+
+    .navbar-default {
+        background: transparent;
+        -webkit-transition: background 0.35s ease-in-out;
+        -moz-transition: background 0.35s ease-in-out;
+        -o-transition: background 0.35s ease-in-out;
+        transition: background 0.35s ease-in-out;
     }
-}
-
-#about {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: 100%;
-    background: url('http://uncubed.com/wp-content/uploads/2015/04/376.jpeg');
-    background-size: cover;
-}
-
-.navbar {
-    background-color: rgba(94, 94, 94, 0.5);
 }
 
 #ava {
@@ -148,12 +114,21 @@ body {
 }
 
 /* Sections */
+.about-section {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    background: #c0c0c0;
+
+}
 
 .portfolio-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: url('http://uncubed.com/wp-content/uploads/2015/04/376.jpeg') center;
+    background-size: cover;
 }
 
 .contact-section {
@@ -162,4 +137,5 @@ body {
     text-align: center;
     background: #eee;
 }
+
 
