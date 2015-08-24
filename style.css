@@ -102,6 +102,10 @@ body {
         vertical-align: middle;
     }
 
+    .inner-cover {
+        padding-top: 150px;
+    }
+
     /* Handle the widths */
     .mastfoot,
     .cover-container {
@@ -113,6 +117,9 @@ body {
     .mastfoot,
     .cover-container {
         width: 700px;
+    }
+    .inner-cover {
+        padding-top: 150px;
     }
 }
 
@@ -140,8 +147,6 @@ body {
     padding: 0;
 }
 
-
-
 /* Sections */
 
 .portfolio-section {
@@ -157,3 +162,4 @@ body {
     text-align: center;
     background: #eee;
 }
+
