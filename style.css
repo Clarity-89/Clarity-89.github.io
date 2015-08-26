@@ -133,7 +133,7 @@ body {
 }
 
 .portfolio-section {
-    height: 100%;
+    height: auto;
     width: 100%;
     text-align: center;
     background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/Desk.jpg') center;
