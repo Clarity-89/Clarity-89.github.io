@@ -138,6 +138,7 @@ body {
     text-align: center;
     background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/Desk.jpg') center;
     background-size: cover;
+    overflow:auto;
 }
 
 .portfolio-inner {
@@ -153,7 +154,6 @@ body {
     position: relative;
     margin: 3% auto;
     max-width: 650px;
-
 }
 
 .portfolio-caption {
