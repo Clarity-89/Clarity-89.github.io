@@ -1,18 +1,14 @@
 /*
  * Base structure
  */
-
 html,
 body {
     height: 100%;
-    background-color: #333;
 }
 
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
-
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -21,19 +17,29 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    background: url('http://shawngraham.me/images/blog/DeathtoStock_Wired7.jpg') center;
+    background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/workspace.jpg') center;
     background-size: cover;
 }
 
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
-
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 500px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 600px rgba(0, 0, 0, 1);
 }
 
 .cover-container {
     margin-right: auto;
     margin-left: auto;
+}
+
+.navbar-default {
+    background: transparent;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 /* Padding for spacing */
@@ -59,8 +65,7 @@ body {
  */
 
 .mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255, 255, 255, .5);
+    color: rgb(255, 255, 255);
 }
 
 /*
@@ -92,14 +97,6 @@ body {
     .cover-container {
         width: 700px;
     }
-
-    .navbar-default {
-        background: transparent;
-        -webkit-transition: background 0.35s ease-in-out;
-        -moz-transition: background 0.35s ease-in-out;
-        -o-transition: background 0.35s ease-in-out;
-        transition: background 0.35s ease-in-out;
-    }
 }
 
 #ava {
@@ -119,16 +116,80 @@ body {
     margin-left: auto;
     width: 100%;
     height: 100%;
-    background: #c0c0c0;
+    background-color: rgba(134, 134, 134, 0.52);
+}
 
+.container {
+    background-color: rgba(232, 232, 232, 0.96);
+    border-radius: 15px;
+    margin-top: 10%;
+    display: inline-block;
+    padding: 5%;
+}
+
+#bio {
+    color: black;
+    margin: 50px;
 }
 
 .portfolio-section {
     height: 100%;
-    padding-top: 150px;
+    width: 100%;
     text-align: center;
-    background: url('http://uncubed.com/wp-content/uploads/2015/04/376.jpeg') center;
+    background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/Desk.jpg') center;
     background-size: cover;
+}
+
+.portfolio-inner {
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 600px rgba(0, 0, 0, 1);
+    padding-top: 60px;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 3% auto;
+    max-width: 650px;
+
+}
+
+.portfolio-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #110c0c;
+    opacity: 0;
+    background: rgba(242, 242, 242, 0.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-about {
+    margin: 3% 20% 3% 20%;
+}
+.portfolio-caption:hover {
+    opacity: 1;
 }
 
 .contact-section {
