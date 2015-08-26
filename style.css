@@ -9,6 +9,7 @@ body {
 body {
     color: #fff;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -138,13 +139,14 @@ body {
     min-height: 100%;
     width: 100%;
     text-align: center;
-    background-color: rgb(201,201,201);
-    overflow:auto;
+    background-color: rgb(15,25,41);
+    overflow: auto;
 }
 
-.padding-custom{
+.padding-custom {
     padding-top: 60px;
 }
+
 .about-cover {
     display: block;
     height: 100%;
@@ -178,7 +180,7 @@ body {
 
 .portfolio-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     transform: translateY(-50%);
@@ -193,6 +195,7 @@ body {
 .portfolio-about {
     margin: 3% 20% 3% 20%;
 }
+
 .portfolio-caption:hover {
     opacity: 1;
 }
