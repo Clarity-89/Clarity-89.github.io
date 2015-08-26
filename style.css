@@ -116,7 +116,8 @@ body {
     margin-left: auto;
     width: 100%;
     height: 100%;
-    background-color: rgba(134, 134, 134, 0.52);
+    background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/Desk.jpg') center;
+    background-size: cover;
 }
 
 .container {
@@ -137,12 +138,14 @@ body {
     min-height: 100%;
     width: 100%;
     text-align: center;
-    background: url('https://dl.dropboxusercontent.com/u/28151607/backgrounds/Desk.jpg') center;
-    background-size: cover;
+    background-color: rgba(134, 134, 134, 0.52);
     overflow:auto;
 }
 
-.portfolio-inner {
+.padding-custom{
+    padding-top: 60px;
+}
+.about-cover {
     height: 100%;
     width: 100%;
     -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
