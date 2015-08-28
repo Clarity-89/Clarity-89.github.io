@@ -91,11 +91,6 @@ body {
 
 @media (min-width: 768px) {
 
-    /* Pull out the footer */
-    /* .mastfoot {
-         position: relative;
-         bottom: 0;
-     }*/
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
@@ -105,6 +100,10 @@ body {
     .mastfoot,
     .cover-container {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+
+    #ava {
+        margin: 2px 20px 5px 40px;
     }
 }
 
@@ -116,7 +115,6 @@ body {
 }
 
 #ava {
-    margin: 2px 20px 5px 40px;
     border-radius: 50%;
     width: 50px;
     border: 1px black solid;
