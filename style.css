@@ -147,7 +147,7 @@ body {
     padding: 50px;
     overflow: auto;
     height: auto;
-    background-color: rgba(15, 25, 41, .9);
+    background-color: rgb(15, 25, 41);
 }
 
 #bio {
