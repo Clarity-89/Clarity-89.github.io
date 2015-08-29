@@ -85,37 +85,6 @@ body {
     width: 100%
 }
 
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-
-    /* Handle the widths */
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-
-    #ava {
-        margin: 2px 20px 5px 40px;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .mastfoot,
-    .cover-container {
-        width: 700px;
-    }
-
-}
-
 #ava {
     border-radius: 50%;
     width: 50px;
@@ -123,7 +92,7 @@ body {
 }
 
 #ava-big {
-    /*  margin-top: 100px;*/
+    margin-bottom: 25px;
 }
 
 .custom-nav {
@@ -136,7 +105,6 @@ body {
     margin-left: auto;
     width: 100%;
     min-height: 50%;
-    /* background-color: rgba(166, 166, 166, .2);*/
     height: auto;
     overflow: auto;
 }
@@ -152,7 +120,7 @@ body {
 
 #bio {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -223,7 +191,7 @@ body {
 .contact-text {
     color: #110c0c;
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .thumbnail {
@@ -245,4 +213,40 @@ hr:nth-child(2) {
     color: rgb(15, 25, 41);
     height: 1px;
     width: 30%;
+}
+
+@media (min-width: 768px) {
+
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+
+    /* Handle the widths */
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+
+    #ava {
+        margin: 2px 20px 5px 40px;
+    }
+
+    #ava-big {
+        margin-bottom: 0;
+    }
+    #bio {
+        font-size: 16px;
+    }
+    .contact-text {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+
 }
