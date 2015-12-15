@@ -73,14 +73,14 @@ body {
  * Footer
  */
 
-.footer {
-    margin-top: 6%;
-    color: rgb(17, 12, 12);
+footer {
+    position: relative;
+    margin-top: 12%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%
 }
 
 #ava {
